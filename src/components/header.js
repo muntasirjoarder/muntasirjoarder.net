@@ -5,12 +5,12 @@ class Header extends Component {
   constructor(props){
     super(props);
     this.state = {
-        windowWidth: window.innerWidth,
+        windowWidth: typeof window !== 'undefined' && window.innerWidth,
         mobileMenuVisible: false
     };
   }
   handleResize() {
-    this.setState({windowWidth: window.innerWidth});
+    this.setState({windowWidth: typeof window !== 'undefined' && window.innerWidth});
   }
 
   componentDidMount() {
