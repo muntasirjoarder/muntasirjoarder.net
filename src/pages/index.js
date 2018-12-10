@@ -5,44 +5,10 @@ import { FaLinkedinIn, FaGithub, FaTwitter, FaGooglePlusG, FaHtml5, FaCss3Alt, F
 
 import Layout from '../components/layout'
 
-const profileImg = require('../dist/img/myphoto.jpg')
+
 const IndexPage = () => (
   <Layout>
-   <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a className="navbar-brand js-scroll-trigger" href="#page-top">
-        <span className="d-block d-lg-none">Muntasir Joarder</span>
-        <span className="d-none d-lg-block">
-          <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={profileImg} alt="" />
-        </span>
-      </a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div className="container-fluid p-0">
+       <div className="container-fluid p-0">
         <section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <div className="my-auto">
               <h1 className="mb-0">Muntasir

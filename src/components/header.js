@@ -1,42 +1,68 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, {Component} from 'react'
+const profileImg = require('../dist/img/myphoto.jpg')
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+        windowWidth: window.innerWidth,
+        mobileMenuVisible: false
+    };
+  }
+  handleResize() {
+    this.setState({windowWidth: window.innerWidth});
+  }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+  }
 
-Header.defaultProps = {
-  siteTitle: '',
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
+  }
+
+  handleClick = (event) => {
+    if(this.state.windowWidth <= 992) { 
+      this.setState({mobileMenuVisible: !this.state.mobileMenuVisible});
+    }
+  }
+  render(){
+    return (
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a className="navbar-brand js-scroll-trigger" href="#page-top">
+        <span className="d-block d-lg-none">Muntasir Joarder</span>
+        <span className="d-none d-lg-block">
+          <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={profileImg} alt="" />
+        </span>
+      </a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon" onClick={this.handleClick}></span>
+      </button>
+      <div className={this.state.mobileMenuVisible ? 'collapse navbar-collapse show':'collapse navbar-collapse'} id="navbarSupportedContent">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    )
+  }
 }
 
 export default Header
