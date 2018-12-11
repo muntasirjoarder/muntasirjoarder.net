@@ -1,10 +1,93 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FaLinkedinIn, FaGithub, FaTwitter, FaGooglePlusG, FaHtml5, FaCss3Alt, FaTrophy, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
-
+import { FaMediumM, FaLinkedinIn, FaGithub, FaTwitter, FaGooglePlusG, FaHtml5, FaCss3Alt, FaTrophy, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
+import Skills from '../components/skills'
+import Education from '../components/education'
 
 import Layout from '../components/layout'
 
+const education={
+  "data": [
+    {
+      "institution": "Chalmers University of Technology, Sweden",
+      "course": "Masters in Computer Engineering",
+      "start": "September 2003",
+      "finish": "August 2005"
+    },
+    {
+      "institution": "Khulna University, Bangladesh",
+      "course": "Bachelor in Computer Science and Engineering",
+      "start": "September 1997",
+      "finish": "December 2001"
+    },
+    {
+      "institution": "Pabna Cadet College, Bangladesh",
+      "course": "SSC and HSC",
+      "start": "1990",
+      "finish": "1996"
+    }
+  ]
+}
+const experience = {
+  "data": [
+    {
+      "title": "IoT Solutions Developer",
+      "company": "Ipswich City Council",
+      "description": "Working as Technical Expert in Council SmartCity project. Providing technical expertise in data consolidation, analysis and visualisation from IoT sensors and various smart devices transferred over LoraWan and SigFox network.",
+      "startDate": "June 2017",
+      "endDate": "Present",
+      "orderid": 1
+    },
+    {
+      "title": "Web Developer",
+      "company": "Ipswich City Council",
+      "description": "Define, develop, implement and support Web and Self Service solutions for Council's internal and external web/online presence ensuring design and coding standards and procedures are defined, maintained and complied with.",
+      "startDate": "January 2011",
+      "endDate": "June 2017",
+      "orderid": 2
+    },
+    {
+      "title": "Blockchain Enthusiast",
+      "company": "Chainledger",
+      "description": "Researching, Planning, solution architecting and developing Blockchain based DAPPs for Ethereum, Hyperledger, Steller Blockchain networks.",
+      "startDate": "August 2017",
+      "endDate": "Present",
+      "orderid": 3
+    },
+    {
+      "title": "Web Developer",
+      "company": "Designate Group",
+      "description": "Working collaboratively with the creative team to develop web front end as per design specification.",
+      "startDate": "October 2010",
+      "endDate": "January 2011",
+      "orderid": 4
+    },
+    {
+      "title": "Technology Specialist",
+      "company": "Grameenphone Ltd",
+      "description": "Take high level of marketing/business requirements and translate them into cost effective technical and functional design specification and work with solutions all the way through into post GO-LIVE.",
+      "startDate": "May 2009",
+      "endDate": "July 2010",
+      "orderid": 5
+    },
+    {
+      "title": "Sr Systems Analyst",
+      "company": "Robi Axiata Ltd",
+      "description": "Preparing end to end solution plan for new Value Added Services and applications.",
+      "startDate": "October 2005",
+      "endDate": "May 2009",
+      "orderid": 6
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Dohatec",
+      "description": "Developing fullstack web based solutions.",
+      "startDate": "February 2002",
+      "endDate": "August 2003",
+      "orderid": 7
+    }
+  ]
+}
 
 const IndexPage = () => (
   <Layout>
@@ -15,15 +98,22 @@ const IndexPage = () => (
                 <span className="text-primary">Joarder</span>
               </h1>
               <div className="subheading mb-5">Kuraby, QLD-4112, Australia · (+61) 4250 49459 ·
-                <a href="mailto:contact@muntasirjoarder.net">admin@muntasirjoarder.net</a>
+                <a href="mailto:muntasir.joarder@gmail.com">muntasir.joarder@gmail.com</a>
               </div>
-              <p className="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+              <p className="lead mb-5">Software Developer with 15 years of Full-stack web development experience in all stages of the development cycle for dynamic web projects.</p>
+              
+              
+
               <div className="social-icons">
                 <a href="https://www.linkedin.com/in/muntasir/" target="_blank">
                   <FaLinkedinIn />
                 </a>
                 <a href="http://github.com/muntasirjoarder" target="_blank">
                   <FaGithub />
+                </a>
+                
+                <a href="https://medium.com/@muntasirjoarder" target="_blank">
+                  <FaMediumM />
                 </a>
                 <a href="https://twitter.com/muntasirJoarder" target="_blank">
                   <FaTwitter />
@@ -37,149 +127,73 @@ const IndexPage = () => (
 
           <hr className="m-0" />
 
-          <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+           <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div className="my-auto">
-          <h2 className="mb-5">Experience</h2>
+            <h2 className="mb-5">Skills</h2>
 
-          <div className="resume-item d-flex flex-column flex-md-row mb-5">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">Senior Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">March 2013 - Present</span>
-            </div>
-          </div>
+            <div className="subheading mb-3">Programming Languages &amp; Tools</div>
+            <ul className="list-inline dev-icons">
+              <li className="list-inline-item">
+                <FaHtml5 />
+              </li>
+              <li className="list-inline-item">
+                <FaCss3Alt />
+              </li>
+              <li className="list-inline-item">
+                <FaJsSquare />
+              </li>
+              
+              <li className="list-inline-item">
+                <FaReact />
+              </li>
+              <li className="list-inline-item">
+                <FaNodeJs />
+              </li>
+              <li className="list-inline-item">
+              <FaSass />
+              </li>
+              <li className="list-inline-item">
+                <FaLess />
+              </li>
+              <li className="list-inline-item">
+                <FaWordpress />
+              </li>
 
-          <div className="resume-item d-flex flex-column flex-md-row mb-5">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
+              <li className="list-inline-item">
+                <FaNpm />
+              </li>
+            </ul>
+            <div className="subheading mb-3">Workflow</div>
 
-          <div className="resume-item d-flex flex-column flex-md-row mb-5">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">Junior Web Designer</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">Web Design Intern</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">September 2008 - June 2010</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <hr className="m-0" />
-
-       <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div className="my-auto">
-          <h2 className="mb-5">Education</h2>
-
-          <div className="resume-item d-flex flex-column flex-md-row mb-5">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">University of Colorado Boulder</h3>
-              <div className="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">August 2006 - May 2010</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">James Buchanan High School</h3>
-              <div className="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">August 2002 - May 2006</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr className="m-0" />
-
-      <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div className="my-auto">
-        <h2 className="mb-5">Skills</h2>
-
-        <div className="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul className="list-inline dev-icons">
-          <li className="list-inline-item">
-            <FaHtml5 />
-          </li>
-          <li className="list-inline-item">
-            <FaCss3Alt />
-          </li>
-          <li className="list-inline-item">
-            <FaJsSquare />
-          </li>
-          
-          <li className="list-inline-item">
-            <FaReact />
-          </li>
-          <li className="list-inline-item">
-            <FaNodeJs />
-          </li>
-          <li className="list-inline-item">
-          <FaSass />
-          </li>
-          <li className="list-inline-item">
-            <FaLess />
-          </li>
-          <li className="list-inline-item">
-            <FaWordpress />
-          </li>
-
-          <li className="list-inline-item">
-            <FaNpm />
-          </li>
-        </ul>
-        <div className="subheading mb-3">Workflow</div>
-
-        <ul className="fa-ul mb-0">
-            <li>
-              <FaCheck />
-              Mobile-First, Responsive Design</li>
-            <li>
-            <FaCheck />
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-            <FaCheck />
-              Cross Functional Teams</li>
-            <li>
-            <FaCheck />
-              Agile Development &amp; Scrum</li>
-          </ul>
+            <ul className="fa-ul mb-0">
+                <li>
+                  <FaCheck />
+                  Mobile-First, Responsive Design</li>
+                <li>
+                <FaCheck />
+                  Cross Browser Testing &amp; Debugging</li>
+                <li>
+                <FaCheck />
+                  Cross Functional Teams</li>
+                <li>
+                <FaCheck />
+                  Agile Development &amp; Scrum</li>
+              </ul>
 
 
         </div>
       </section>
       <hr className="m-0" />
+
+      <Skills items={experience} />
+
+      <hr className="m-0" />
+
+       <Education items={education} />
+
+      <hr className="m-0" />
+
+     
 
   <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div className="my-auto">
@@ -191,23 +205,7 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-       <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div className="my-auto">
-          <h2 className="mb-5">Awards &amp; Certifications</h2>
-          <ul className="fa-ul mb-0">
-            <li>
-              <FaTrophy />
-              Google Analytics Certified Developer</li>
-            <li>
-            <FaTrophy />
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-            <FaTrophy />
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          </ul>
-        </div>
-      </section>
+      
 
 
     </div>
