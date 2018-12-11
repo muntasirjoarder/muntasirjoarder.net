@@ -21,5 +21,4 @@ const Skills = ({items}) => (
 
     </section>
 )
-
 export default Skills

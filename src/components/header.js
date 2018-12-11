@@ -56,7 +56,6 @@ class Header extends Component {
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
-      
         </ul>
       </div>
     </nav>

@@ -12,5 +12,4 @@ const SkillItem = ({title, company, description, join, finish})=> (
             </div>
           </div>
 )
-
 export default SkillItem

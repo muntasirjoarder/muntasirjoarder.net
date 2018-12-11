@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const EducationItem = ({institution, course, description, start, finish})=> (
     <div className="resume-item d-flex flex-column flex-md-row mb-5">
     <div className="resume-content mr-auto">

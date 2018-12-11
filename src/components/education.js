@@ -2,6 +2,7 @@ import React from 'react'
 import EDucationItem from '../components/education-item'
 import EducationItem from '../components/education-item';
 
+
 const Education = ({items}) => (
     <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div className="my-auto">
