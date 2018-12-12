@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import './layout.css'
 
+const webpagescreen = require('../../src/images/screenshot.png')
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -40,7 +41,7 @@ const Layout = ({ children }) => (
             { name: 'og:description', content: data.site.siteMetadata.facebook.description},
             { name: 'og:url', content: data.site.siteMetadata.facebook.url},
             { name: 'og:site_name', content: data.site.siteMetadata.facebook.site_name},
-            { name: 'og:image', content: data.site.siteMetadata.facebook.image},
+            { name: 'og:image', content: webpagescreen},
           ]}
         >
           <html lang="en" />
