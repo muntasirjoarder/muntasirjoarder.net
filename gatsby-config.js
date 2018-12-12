@@ -3,14 +3,11 @@ module.exports = {
     title: 'Full Stack Web/App Developer',
     description: 'Muntasir Joarder, a passionate Full Stack Developer from Australia with more than 15 years of experience on building beautiful and unique Websites and Apps using advanced front-end and back-end technologies.',
     keywords: 'Hyperledger Fabric Blockchain Developer Australia, Web Application Development Company, Web Application Development Company Brisbane, Front End Development, Blockchain Development Brisbane, Blockchain Development, Gatsbyjs static website developer, ReactJS developer,web development services, headless CMS developer',
-    facebook: {
-      title: 'Full Stack Web/App Developer',
-      description:'Muntasir Joarder, a passionate Full Stack Developer from Australia with more than 15 years of experience on building beautiful and unique Websites and Apps using advanced front-end and back-end technologies.',
-      url: 'https://muntasirjoarder.net',
-      site_name: 'Muntasir Joarder',
-      image_url: 'https://drik.co/wp-content/uploads/screenshot.png'
-    }
-  },
+    url: 'https://muntasirjoarder.net',
+    site_name: 'Muntasir Joarder',
+    screenshot: 'https://drik.co/wp-content/uploads/screenshot.png',
+    twitterhandle: '@muntasirJoarder',
+    },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
