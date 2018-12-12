@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
                 description
                 url
                 site_name
-                image
+                image_url
               }
           }
         }
@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
             { name: 'og:description', content: data.site.siteMetadata.facebook.description},
             { name: 'og:url', content: data.site.siteMetadata.facebook.url},
             { name: 'og:site_name', content: data.site.siteMetadata.facebook.site_name},
-            { name: 'og:image', content: webpagescreen},
+            { name: 'og:image', content: data.site.siteMetadata.facebook.image_url},
           ]}
         >
           <html lang="en" />
