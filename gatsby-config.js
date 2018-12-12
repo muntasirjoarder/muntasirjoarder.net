@@ -8,7 +8,7 @@ module.exports = {
       description:'Muntasir Joarder, a passionate Full Stack Developer from Australia with more than 15 years of experience on building beautiful and unique Websites and Apps using advanced front-end and back-end technologies.',
       url: 'https://muntasirjoarder.net',
       site_name: 'Muntasir Joarder',
-      image: './src/images/screenshot.png'
+      image: 'src/images/screenshot.png'
     }
   },
   plugins: [
