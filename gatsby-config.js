@@ -1,6 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Full Stack Web/App Developer',
+    description: 'Muntasir Joarder, a passionate Full Stack Developer from Australia with more than 15 years of experience on building beautiful and unique Websites and Apps using advanced front-end and back-end technologies.',
+    keywords: 'Hyperledger Fabric Blockchain Developer Australia, Web Application Development Company, Web Application Development Company Brisbane, Front End Development, Blockchain Development Brisbane, Blockchain Development, Gatsbyjs static website developer, ReactJS developer,web development services, headless CMS developer',
+    facebook: {
+      title: 'Full Stack Web/App Developer',
+      description:'Muntasir Joarder, a passionate Full Stack Developer from Australia with more than 15 years of experience on building beautiful and unique Websites and Apps using advanced front-end and back-end technologies.',
+      url: 'https://muntasirjoarder.net',
+      site_name: 'Muntasir Joarder',
+      image: './src/images/screenshot.png'
+    }
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -32,7 +41,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

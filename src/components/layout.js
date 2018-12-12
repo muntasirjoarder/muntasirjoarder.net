@@ -14,6 +14,15 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
+            keywords
+            facebook{
+                title
+                description
+                url
+                site_name
+                image
+              }
           }
         }
       }
@@ -23,8 +32,15 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: data.site.siteMetadata.description },
+            { name: 'keywords', content: data.site.siteMetadata.keywords },
+            { name: 'og:locale', content: 'en_US'},
+            { name: 'og:type', content: 'website'},
+            { name: 'og:title', content: data.site.siteMetadata.facebook.title},
+            { name: 'og:description', content: data.site.siteMetadata.facebook.description},
+            { name: 'og:url', content: data.site.siteMetadata.facebook.url},
+            { name: 'og:site_name', content: data.site.siteMetadata.facebook.site_name},
+            { name: 'og:image', content: data.site.siteMetadata.facebook.image},
           ]}
         >
           <html lang="en" />
