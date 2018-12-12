@@ -1,7 +1,7 @@
 @import '../dist/vendor/bootstrap/css/bootstrap.min.css';
 @import '../dist/css/resume.css';
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
     #about h1 {
         font-size: 5rem;
         line-height: 4.5rem;
