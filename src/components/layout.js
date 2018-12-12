@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import JsonLd from '../components/jsonld'
+import OrgSchema from '../../schemajson.json'
 
 import Header from './header'
 import './layout.css'
@@ -47,6 +49,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        <JsonLd data={OrgSchema} />
         <Header />
           {children}
       </>

@@ -1,0 +1,35 @@
+{ "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Muntasir Joarder",
+    "legalName" : "Muntasir Joarder",
+    "url": "http://muntasirjoarder.net",
+    "logo": "http://cdn.elite-strategies.com/wp-content/uploads/2013/04/elitestrategies.png",
+    "foundingDate": "2017",
+    "founders": [
+    {
+    "@type": "Person",
+    "name": "Muntasir Joarder"
+    },
+    {
+    "@type": "Person",
+    "name": ""
+    } ],
+    "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit 44, 70 Allingham Street",
+    "addressLocality": "Kuraby",
+    "addressRegion": "QLD",
+    "postalCode": "4112",
+    "addressCountry": "AUS"
+    },
+    "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "telephone": "[+61-4250-49459]",
+    "email": "muntasir.joarder@gmail.com"
+    },
+    "sameAs": [ 
+    "https://twitter.com/muntasirJoarder",
+    "https://www.linkedin.com/in/muntasir/",
+    "https://plus.google.com/u/0/+MdMuntasirMamunJoarderKU"
+    ]}
