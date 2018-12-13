@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React, {Component} from 'react'
 import { FaMediumM, FaLinkedinIn, FaGithub, FaTwitter, FaGooglePlusG, FaHtml5, FaCss3Alt, FaTrophy, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
 import Skills from '../components/skills'
 import Education from '../components/education'
+import { Element } from 'react-scroll'
 
 import Layout from '../components/layout'
 
@@ -89,46 +89,49 @@ const experience = {
   ]
 }
 
+
 const IndexPage = () => (
   <Layout>
        <div className="container-fluid p-0">
-        <section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div className="my-auto">
-              <h1 className="mb-0">Muntasir
-                <span className="text-primary">Joarder</span>
-              </h1>
-              <div className="subheading mb-5">Kuraby, QLD-4112, Australia · (+61) 4250 49459 ·
-                <a href="mailto:muntasir.joarder@gmail.com">muntasir.joarder@gmail.com</a>
-              </div>
-              <p className="lead mb-5">Software Developer with 15 years of Full-stack web development experience in all stages of the development cycle for dynamic web projects.</p>
-              
-              
+       <Element name="about" className="about">
+            <section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+                <div className="my-auto">
+                  <h1 className="mb-0">Muntasir
+                    <span className="text-primary">Joarder</span>
+                  </h1>
+                  <div className="subheading mb-5">Kuraby, QLD-4112, Australia · (+61) 4250 49459 ·
+                    <a href="mailto:muntasir.joarder@gmail.com">muntasir.joarder@gmail.com</a>
+                  </div>
+                  <p className="lead mb-5">Software Developer with 15 years of Full-stack web development experience in all stages of the development cycle for dynamic web projects.</p>
+                  
+                  
 
-              <div className="social-icons">
-                <a href="https://www.linkedin.com/in/muntasir/" target="_blank">
-                  <FaLinkedinIn />
-                </a>
-                <a href="http://github.com/muntasirjoarder" target="_blank">
-                  <FaGithub />
-                </a>
-                
-                <a href="https://medium.com/@muntasirjoarder" target="_blank">
-                  <FaMediumM />
-                </a>
-                <a href="https://twitter.com/muntasirJoarder" target="_blank">
-                  <FaTwitter />
-                </a>
-                <a href="https://plus.google.com/u/0/+MdMuntasirMamunJoarderKU" target="_blank">
-                  <FaGooglePlusG />
-                </a>
-              </div>
-            </div>
-          </section>
+                  <div className="social-icons">
+                    <a href="https://www.linkedin.com/in/muntasir/" target="_blank">
+                      <FaLinkedinIn />
+                    </a>
+                    <a href="http://github.com/muntasirjoarder" target="_blank">
+                      <FaGithub />
+                    </a>
+                    
+                    <a href="https://medium.com/@muntasirjoarder" target="_blank">
+                      <FaMediumM />
+                    </a>
+                    <a href="https://twitter.com/muntasirJoarder" target="_blank">
+                      <FaTwitter />
+                    </a>
+                    <a href="https://plus.google.com/u/0/+MdMuntasirMamunJoarderKU" target="_blank">
+                      <FaGooglePlusG />
+                    </a>
+                  </div>
+                </div>
+              </section>
 
-          <hr className="m-0" />
-
+              <hr className="m-0" />
+          </Element>
+          <Element name="skills" className="skills">
            <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div className="my-auto">
+            <div className="my-auto">
             <h2 className="mb-5">Skills</h2>
 
             <div className="subheading mb-3">Programming Languages &amp; Tools</div>
@@ -184,17 +187,17 @@ const IndexPage = () => (
         </div>
       </section>
       <hr className="m-0" />
-
-      <Skills items={experience} />
-
-      <hr className="m-0" />
-
-       <Education items={education} />
-
-      <hr className="m-0" />
-
+      </Element>
+      <Element name="experience" className="experience">
+          <Skills items={experience} />
+          <hr className="m-0" />
+      </Element>
+      <Element name="education" className="education">
+          <Education items={education} />
+          <hr className="m-0" />
+      </Element>
      
-
+      <Element name="interests" className="interests">
   <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div className="my-auto">
           <h2 className="mb-5">Interests</h2>
@@ -204,9 +207,8 @@ const IndexPage = () => (
       </section>
 
       <hr className="m-0" />
-
+</Element>
     </div>
   </Layout>
 )
-
 export default IndexPage

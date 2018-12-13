@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import { Link } from 'react-scroll'
+
 const profileImg = require('../dist/img/myphoto.jpg')
 
 class Header extends Component {
@@ -41,20 +43,21 @@ class Header extends Component {
       <div className={this.state.mobileMenuVisible ? 'collapse navbar-collapse show':'collapse navbar-collapse'} id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">About</a>
+              <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="experience" spy={true} smooth={true} offset={50} duration={500}>Experience</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#education">Education</a>
+            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="education" spy={true} smooth={true} offset={50} duration={500}>Education</Link>
           </li>
          
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="interests" spy={true} smooth={true} offset={50} duration={500}>Interests</Link>
+
           </li>
         </ul>
       </div>
