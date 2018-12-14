@@ -32,7 +32,7 @@ const portfolio={
     },
     
     {
-      "image": require('../images/project-coming-soon.png'),
+      "image": require('../images/project-coming.png'),
       "title": "Gatsby Coming Soon",
       "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp",
       "url": "https://gatsby-comingsoon.netlify.com/"

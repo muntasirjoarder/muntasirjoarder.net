@@ -10,6 +10,13 @@
     }
 }
 
+@media (max-width: 500px) {
+    #about h1 {
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+}
+
 .nav-item .nav-link{
     cursor: pointer;
 }
