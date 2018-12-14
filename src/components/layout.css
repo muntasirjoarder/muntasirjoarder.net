@@ -1,5 +1,7 @@
 @import '../dist/vendor/bootstrap/css/bootstrap.min.css';
 @import '../dist/css/resume.css';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 @media (max-width: 991px) {
     #about h1 {

@@ -3,9 +3,54 @@ import { FaMediumM, FaLinkedinIn, FaGithub, FaTwitter, FaGooglePlusG, FaHtml5, F
 import Skills from '../components/skills'
 import Education from '../components/education'
 import { Element } from 'react-scroll'
-
 import Layout from '../components/layout'
+import Portfolios from '../components/portfolios'
 
+
+
+
+const portfolio={
+  "data": [
+    {
+      "image": require('../images/project-react.png'),
+      "title": "Gatsby Course Website",
+      "description":"Gatsby, ReactJS, Netlify, CSS3, Animation, Stripe",
+      "url": "https://reactcourse.netlify.com"
+    },
+   
+    {
+      "image": require('../images/project-sunnahway.png'),
+      "title": "sunnahway.com.au",
+      "description":"Wordpress, Woocommerce, MailChimp, Hosting, Emails, Product configuration, Shop coupon",
+      "url": "https://sunnahway.com.au"
+    },
+    {
+      "image": require('../images/project-drik.png'),
+      "title": "DRIK.CO",
+      "description":"Wordpress, Divi, MailChimp, Hosting, Emails",
+      "url": "https://drik.co"
+    },
+    
+    {
+      "image": require('../images/project-coming-soon.png'),
+      "title": "Gatsby Coming Soon",
+      "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp",
+      "url": "https://gatsby-comingsoon.netlify.com/"
+    },
+    {
+      "image": require('../images/project-rbi.png'),
+      "title": "Real Estate Blockchain",
+      "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp, Carousel",
+      "url": "https://rbi-bootstrap.netlify.com"
+    },
+    {
+      "image": require('../images/project-mjoarder.png'),
+      "title": "My Personal Website",
+      "description":"Gatsby, ReactJS, Bootstrap4, Netlify, Carousel, Helmet, Schema",
+      "url": "https://muntasirjoarder.net"
+    }
+  ]
+}
 const education={
   "data": [
     {
@@ -100,7 +145,7 @@ const IndexPage = () => (
                     <span className="text-primary">Joarder</span>
                   </h1>
                   <div className="subheading mb-5">Kuraby, QLD-4112, Australia · (+61) 4250 49459 ·
-                    <a href="mailto:muntasir.joarder@gmail.com">muntasir.joarder@gmail.com</a>
+                    <a href="mailto:admin@muntasirjoarder.net">admin@muntasirjoarder.net</a>
                   </div>
                   <p className="lead mb-5">Software Developer with 15 years of Full-stack web development experience in all stages of the development cycle for dynamic web projects.</p>
                   
@@ -129,6 +174,20 @@ const IndexPage = () => (
 
               <hr className="m-0" />
           </Element>
+
+          <Element name="portfolio" className="portfolio">
+            <section className="portfolio-section p-3 p-lg-5 d-flex d-column" id="portfolio">
+              <div className="my-auto">
+                <h2 className="mb-5">Portfolio</h2>
+
+                <Portfolios items={portfolio}/>
+
+
+              </div>
+            </section>
+            <hr className="m-0" />
+          </Element>
+
           <Element name="skills" className="skills">
            <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
             <div className="my-auto">

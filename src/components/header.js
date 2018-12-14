@@ -46,6 +46,9 @@ class Header extends Component {
               <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
           </li>
           <li className="nav-item">
+              <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="portfolio" spy={true} smooth={true} offset={50} duration={500}>Portfolio</Link>
+          </li>
+          <li className="nav-item">
             <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
           </li>
           <li className="nav-item">
