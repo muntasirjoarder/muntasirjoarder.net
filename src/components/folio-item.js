@@ -33,7 +33,7 @@ const FolioFooter=styled.div`
 
 const FolioItem = ({img,title,description,url}) => (
     <FolioContainer>
-        <FolioHeader><img src={img} width="100%" /></FolioHeader>
+        <FolioHeader><a target="_blank" href={url}><img src={img} width="100%" /></a></FolioHeader>
         <FolioBody>
           <h4>{title}</h4>
           {description}
