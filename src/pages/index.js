@@ -8,49 +8,49 @@ import Portfolios from '../components/portfolios'
 
 
 
-
 const portfolio={
   "data": [
     {
-      "image": require('../images/project-react.png'),
+      "image": require('../images/project-react.webp'),
       "title": "Gatsby Course Website",
       "description":"Gatsby, ReactJS, Netlify, CSS3, Animation, Stripe",
       "url": "https://reactcourse.netlify.com"
     },
    
     {
-      "image": require('../images/project-sunnahway.png'),
+      "image": require('../images/project-sunnahway.webp'),
       "title": "sunnahway.com.au",
       "description":"Wordpress, Woocommerce, MailChimp, Hosting, Emails, Product configuration, Shop coupon",
       "url": "https://sunnahway.com.au"
     },
     {
-      "image": require('../images/project-drik.png'),
+      "image": require('../images/project-drik.webp'),
       "title": "DRIK.CO",
       "description":"Wordpress, Divi, MailChimp, Hosting, Emails",
       "url": "https://drik.co"
     },
     
     {
-      "image": require('../images/project-coming.png'),
+      "image": require('../images/project-coming.webp'),
       "title": "Gatsby Coming Soon",
       "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp",
       "url": "https://gatsby-comingsoon.netlify.com/"
     },
     {
-      "image": require('../images/project-rbi.png'),
+      "image": require('../images/project-rbi.webp'),
       "title": "Real Estate Blockchain",
       "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp, Carousel",
       "url": "https://rbi-bootstrap.netlify.com"
     },
     {
-      "image": require('../images/project-mjoarder.png'),
+      "image": require('../images/project-mjoarder.webp'),
       "title": "My Personal Website",
       "description":"Gatsby, ReactJS, Bootstrap4, Netlify, Carousel, Helmet, Schema",
       "url": "https://muntasirjoarder.net"
     }
   ]
 }
+
 const education={
   "data": [
     {
