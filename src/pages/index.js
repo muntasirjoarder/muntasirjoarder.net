@@ -75,6 +75,14 @@ const education={
 const experience = {
   "data": [
     {
+      "title": "Blockchain Consultant",
+      "company": "Chainledger",
+      "description": "Working with IBM Hyperledger Fabric and Ethereum based Smart Contract consulting and development for B2B clients.",
+      "startDate": "August 2017",
+      "endDate": "Present",
+      "orderid": 1
+    },
+    {
       "title": "IoT Solutions Developer",
       "company": "Ipswich City Council",
       "description": "Working as Technical Expert in Council SmartCity project. Providing technical expertise in data consolidation, analysis and visualisation from IoT sensors and various smart devices transferred over LoraWan and SigFox network.",
