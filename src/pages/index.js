@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { FaMediumM, FaLinkedinIn, FaGithub, FaTwitter, FaGooglePlusG, FaHtml5, FaCss3Alt, FaTrophy, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
+import { FaMediumM, FaLinkedinIn, FaGithub, FaTwitter, FaHtml5, FaCss3Alt, FaTrophy, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
 import Skills from '../components/skills'
 import Education from '../components/education'
 import { Element } from 'react-scroll'
@@ -74,14 +74,23 @@ const education={
 }
 const experience = {
   "data": [
+  
+    {
+      "title": "IoT Architect",
+      "company": "Brisbane City Council",
+      "description": "Building overarching IoT Architecture, IoT Data Modelling, IoT Technology Decision Matrix, IoT Feasibility Analysis.",
+      "startDate": "March 2019",
+      "endDate": "Present",
+      "orderid": 1
+    },
     
     {
       "title": "IoT Solutions Developer",
       "company": "Ipswich City Council",
       "description": "Working as Technical Expert in Council SmartCity project. Providing technical expertise in data consolidation, analysis and visualisation from IoT sensors and various smart devices transferred over LoraWan and SigFox network.",
       "startDate": "June 2017",
-      "endDate": "Present",
-      "orderid": 1
+      "endDate": "March 2019",
+      "orderid": 5
     },
     {
       "title": "Web Developer",
@@ -89,7 +98,7 @@ const experience = {
       "description": "Define, develop, implement and support Web and Self Service solutions for Council's internal and external web/online presence ensuring design and coding standards and procedures are defined, maintained and complied with.",
       "startDate": "January 2011",
       "endDate": "June 2017",
-      "orderid": 2
+      "orderid": 10
     },
     {
       "title": "Blockchain Enthusiast",
@@ -97,7 +106,7 @@ const experience = {
       "description": "Researching, Planning, solution architecting and developing Blockchain based DAPPs for Ethereum, Hyperledger, Steller Blockchain networks.",
       "startDate": "August 2017",
       "endDate": "Present",
-      "orderid": 3
+      "orderid": 15
     },
     {
       "title": "Web Developer",
@@ -105,7 +114,7 @@ const experience = {
       "description": "Working collaboratively with the creative team to develop web front end as per design specification.",
       "startDate": "October 2010",
       "endDate": "January 2011",
-      "orderid": 4
+      "orderid": 20
     },
     {
       "title": "Technology Specialist",
@@ -113,7 +122,7 @@ const experience = {
       "description": "Take high level of marketing/business requirements and translate them into cost effective technical and functional design specification and work with solutions all the way through into post GO-LIVE.",
       "startDate": "May 2009",
       "endDate": "July 2010",
-      "orderid": 5
+      "orderid": 25
     },
     {
       "title": "Sr Systems Analyst",
@@ -121,7 +130,7 @@ const experience = {
       "description": "Preparing end to end solution plan for new Value Added Services and applications.",
       "startDate": "October 2005",
       "endDate": "May 2009",
-      "orderid": 6
+      "orderid": 30
     },
     {
       "title": "Software Engineer",
@@ -129,7 +138,7 @@ const experience = {
       "description": "Developing fullstack web based solutions.",
       "startDate": "February 2002",
       "endDate": "August 2003",
-      "orderid": 7
+      "orderid": 35
     }
   ]
 }
@@ -165,9 +174,7 @@ const IndexPage = () => (
                     <a href="https://twitter.com/muntasirJoarder" target="_blank">
                       <FaTwitter />
                     </a>
-                    <a href="https://plus.google.com/u/0/+MdMuntasirMamunJoarderKU" target="_blank">
-                      <FaGooglePlusG />
-                    </a>
+                    
                   </div>
                 </div>
               </section>
