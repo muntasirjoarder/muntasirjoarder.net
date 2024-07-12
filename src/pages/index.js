@@ -175,9 +175,7 @@ const IndexPage = () => (
                     <a href="https://medium.com/@muntasirjoarder" target="_blank">
                       <FaMediumM />
                     </a>
-                    <a href="https://twitter.com/muntasirJoarder" target="_blank">
-                      <FaTwitter />
-                    </a>
+                    
                     
                   </div>
                 </div>
