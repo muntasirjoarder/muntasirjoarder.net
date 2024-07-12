@@ -153,17 +153,21 @@ const IndexPage = () => (
                   <h1 className="mb-0">Muntasir
                     <span className="text-primary">Joarder</span>
                   </h1>
-                  <div className="subheading mb-5">Kuraby, QLD-4112, Australia · (+61) 4250 49459 ·
-                    <a href="mailto:admin@muntasirjoarder.net">admin@muntasirjoarder.net</a>
+                  <div className="subheading mb-5">Australia · (+61) 4250 49459 ·
+                    <a href="mailto:mjoarder.official@gmail.com">mjoarder.official@gmail.com</a>
                   </div>
-                  <p className="lead mb-5">Software Developer with 15 years of Full-stack web development experience in all stages of the development cycle for dynamic web projects.</p>
+                  <p className="lead mb-5">Over 15 years of professional experience as Software Engineer, Data Engineer and IoT Solutions Architect. Currently working as Principal Data Engineer. </p>
+
+                  <p className="lead mb-5">Built the Modern Data warehouse architecture using Azure Synapse Analytics, Data Factory, Data Lake Gen2, Databricks and Power BI developing metadata-driven pipelines. </p>
+
+                  <p className="lead mb-5">Hands-on experience in working with relational (e.g SQL, PostgreSQL, MySQL, Oracle) , non-relational (i.e NoSQL) databases (e.g. Azure Cosmos DB) and storages (e.g Azure Table Storage, Azure Blob and Queues)  and REST APIs. </p>
+
+                 
                   
                   
 
                   <div className="social-icons">
-                    <a href="https://www.linkedin.com/in/muntasir/" target="_blank">
-                      <FaLinkedinIn />
-                    </a>
+                    
                     <a href="http://github.com/muntasirjoarder" target="_blank">
                       <FaGithub />
                     </a>
