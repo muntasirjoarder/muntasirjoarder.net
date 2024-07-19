@@ -157,7 +157,6 @@ const experience = {
   ]
 }
 
-
 const IndexPage = () => (
 
   <Layout>
