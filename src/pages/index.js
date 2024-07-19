@@ -1,48 +1,47 @@
-import React, {Component} from 'react'
-import { FaMediumM, FaLinkedinIn, FaGithub, FaTwitter, FaHtml5, FaCss3Alt, FaTrophy, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
+import React from 'react'
+import { FaMediumM,  FaGithub, FaHtml5, FaCss3Alt, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
 import Skills from '../components/skills'
 import Education from '../components/education'
 import { Element } from 'react-scroll'
 import Layout from '../components/layout'
-import Portfolios from '../components/portfolios'
-
+import portFolioPDF from '../dist/data-portfolio.pdf'
 
 const portfolio={
   "data": [
     {
-      "image": require('../images/project-react.webp'),
+      "image": require('../../static/project-react.png').default,
       "title": "Gatsby Course Website",
       "description":"Gatsby, ReactJS, Netlify, CSS3, Animation, Stripe",
       "url": "https://reactcourse.netlify.com"
     },
    
     {
-      "image": require('../images/project-sunnahway.webp'),
+      "image": require('../../static/project-sunnahway.webp').default,
       "title": "sunnahway.com.au",
       "description":"Wordpress, Woocommerce, MailChimp, Hosting, Emails, Product configuration, Shop coupon",
       "url": "https://sunnahway.com.au"
     },
     {
-      "image": require('../images/project-drik.webp'),
+      "image": require('../../static/project-drik.webp').default,
       "title": "DRIK.CO",
       "description":"Wordpress, Divi, MailChimp, Hosting, Emails",
       "url": "https://drik.co"
     },
     
     {
-      "image": require('../images/project-coming.webp'),
+      "image": require('../../static/project-coming.webp').default,
       "title": "Gatsby Coming Soon",
       "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp",
       "url": "https://gatsby-comingsoon.netlify.com/"
     },
     {
-      "image": require('../images/project-rbi.webp'),
+      "image": require('../../static/project-rbi.webp').default,
       "title": "Real Estate Blockchain",
       "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp, Carousel",
       "url": "https://rbi-bootstrap.netlify.com"
     },
     {
-      "image": require('../images/project-mjoarder.webp'),
+      "image": require('../../static/project-mjoarder.webp').default,
       "title": "My Personal Website",
       "description":"Gatsby, ReactJS, Bootstrap4, Netlify, Carousel, Helmet, Schema",
       "url": "https://muntasirjoarder.net"
@@ -74,70 +73,85 @@ const education={
 }
 const experience = {
   "data": [
-  
     {
-      "title": "IoT Architect",
+      "title": "Senior Data Engineer",
+      "company": "Queensland University of Technology",
+      "description": "Playing key role in evolving our data management strategies in QUT’s cloud data and analytics environment.",
+      "startDate": "2023",
+      "endDate": "Present",
+      "orderid": 26
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Anglicare Southern Queensland",
+      "description": "Planning, architecting, and implementing Modern Data Warehouse in Microsoft Azure Cloud for Anglicare Southern Queensland.",
+      "startDate": "2021",
+      "endDate": "2023",
+      "orderid": 27
+    },
+    {
+      "title": "IoT Solutions Architect",
       "company": "Brisbane City Council",
       "description": "Building overarching IoT Architecture, IoT Data Modelling, IoT Technology Decision Matrix, IoT Feasibility Analysis.",
-      "startDate": "March 2019",
-      "endDate": "Present",
-      "orderid": 1
+      "startDate": "2019",
+      "endDate": "2021",
+      "orderid": 28
     },
     
     {
       "title": "IoT Solutions Developer",
       "company": "Ipswich City Council",
       "description": "Working as Technical Expert in Council SmartCity project. Providing technical expertise in data consolidation, analysis and visualisation from IoT sensors and various smart devices transferred over LoraWan and SigFox network.",
-      "startDate": "June 2017",
-      "endDate": "March 2019",
-      "orderid": 5
+      "startDate": "2017",
+      "endDate": "2019",
+      "orderid": 29
     },
     {
       "title": "Web Developer",
       "company": "Ipswich City Council",
       "description": "Define, develop, implement and support Web and Self Service solutions for Council's internal and external web/online presence ensuring design and coding standards and procedures are defined, maintained and complied with.",
-      "startDate": "January 2011",
-      "endDate": "June 2017",
-      "orderid": 10
+      "startDate": "2011",
+      "endDate": "2017",
+      "orderid": 30
     },
     {
       "title": "Blockchain Enthusiast",
       "company": "Chainledger",
       "description": "Researching, Planning, solution architecting and developing Blockchain based DAPPs for Ethereum, Hyperledger, Steller Blockchain networks.",
-      "startDate": "August 2017",
-      "endDate": "Present",
-      "orderid": 15
+      "startDate": "2017",
+      "endDate": "2019",
+      "orderid": 31
     },
     {
       "title": "Web Developer",
       "company": "Designate Group",
       "description": "Working collaboratively with the creative team to develop web front end as per design specification.",
-      "startDate": "October 2010",
-      "endDate": "January 2011",
-      "orderid": 20
+      "startDate": "2010",
+      "endDate": "2011",
+      "orderid": 32
     },
     {
       "title": "Technology Specialist",
       "company": "Grameenphone Ltd",
       "description": "Take high level of marketing/business requirements and translate them into cost effective technical and functional design specification and work with solutions all the way through into post GO-LIVE.",
-      "startDate": "May 2009",
-      "endDate": "July 2010",
-      "orderid": 25
+      "startDate": "2009",
+      "endDate": "2010",
+      "orderid": 33
     },
     {
       "title": "Sr Systems Analyst",
       "company": "Robi Axiata Ltd",
       "description": "Preparing end to end solution plan for new Value Added Services and applications.",
-      "startDate": "October 2005",
-      "endDate": "May 2009",
-      "orderid": 30
+      "startDate": "2005",
+      "endDate": "2009",
+      "orderid": 34
     },
     {
       "title": "Software Engineer",
       "company": "Dohatec",
       "description": "Developing fullstack web based solutions.",
-      "startDate": "February 2002",
-      "endDate": "August 2003",
+      "startDate": "2002",
+      "endDate": "2003",
       "orderid": 35
     }
   ]
@@ -145,6 +159,7 @@ const experience = {
 
 
 const IndexPage = () => (
+
   <Layout>
        <div className="container-fluid p-0">
        <Element name="about" className="about">
@@ -153,29 +168,25 @@ const IndexPage = () => (
                   <h1 className="mb-0">Muntasir
                     <span className="text-primary">Joarder</span>
                   </h1>
-                  <div className="subheading mb-5">Australia · (+61) 4250 49459 ·
-                    <a href="mailto:mjoarder.official@gmail.com">mjoarder.official@gmail.com</a>
+                  <div className="subheading mb-5">Senior Data Engineer . Australia · 
+                    <a href="mailto:muntasir.official@gmail.com">muntasir.official@gmail.com</a>
                   </div>
-                  <p className="lead mb-5">Over 15 years of professional experience as Software Engineer, Data Engineer and IoT Solutions Architect. Currently working as Principal Data Engineer. </p>
-
-                  <p className="lead mb-5">Built the Modern Data warehouse architecture using Azure Synapse Analytics, Data Factory, Data Lake Gen2, Databricks and Power BI developing metadata-driven pipelines. </p>
-
-                  <p className="lead mb-5">Hands-on experience in working with relational (e.g SQL, PostgreSQL, MySQL, Oracle) , non-relational (i.e NoSQL) databases (e.g. Azure Cosmos DB) and storages (e.g Azure Table Storage, Azure Blob and Queues)  and REST APIs. </p>
-
-                 
-                  
+                  <p className="lead mb-5">Microsoft Certified: Azure Data Engineer Associate with over 15 years of professional experience in IT industry. Expertise in building and enhancing modern data warehouse with medalion architecture using Microsoft Fabric, Azure Synapse Analytics, Azure Data Factory, Data Lake Gen2, Databricks, data build tool (dbt) and Power BI developing metadata-driven pipelines.</p>
+                  <div class="row justify-content-center">
+                    <a href={portFolioPDF} target='_blank' rel='noreferrer'><button type="button" class="btn btn-primary">Portfolio of Works</button></a>
+                  </div>
                   
 
                   <div className="social-icons">
-                    
-                    <a href="http://github.com/muntasirjoarder" target="_blank">
+                   
+                    <a href="http://github.com/muntasirjoarder" target="_blank" rel="noreferrer">
                       <FaGithub />
                     </a>
                     
-                    <a href="https://medium.com/@muntasirjoarder" target="_blank">
+                    <a href="https://medium.com/@muntasirjoarder" target="_blank" rel="noreferrer">
                       <FaMediumM />
                     </a>
-                    
+                 
                     
                   </div>
                 </div>
@@ -184,19 +195,7 @@ const IndexPage = () => (
               <hr className="m-0" />
           </Element>
 
-          <Element name="portfolio" className="portfolio">
-            <section className="portfolio-section p-3 p-lg-5 d-flex d-column" id="portfolio">
-              <div className="my-auto">
-                <h2 className="mb-5">Portfolio</h2>
-
-                <Portfolios items={portfolio}/>
-
-
-              </div>
-            </section>
-            <hr className="m-0" />
-          </Element>
-
+       
           <Element name="skills" className="skills">
            <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
             <div className="my-auto">
@@ -279,4 +278,7 @@ const IndexPage = () => (
     </div>
   </Layout>
 )
+
 export default IndexPage
+
+

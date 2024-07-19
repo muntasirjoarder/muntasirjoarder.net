@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import { Link } from 'react-scroll'
+import profileImg from '../dist/img/myphoto.jpg'
 
-const profileImg = require('../dist/img/myphoto.jpg')
+//const profileImg = require('../static/img/myphoto.jpg')
 
 class Header extends Component {
   constructor(props){
@@ -43,23 +44,21 @@ class Header extends Component {
       <div className={this.state.mobileMenuVisible ? 'collapse navbar-collapse show':'collapse navbar-collapse'} id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="nav-item">
-              <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
+              <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>About</Link>
+          </li>
+        
+          <li className="nav-item">
+            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="skills" spy={true} smooth={true} offset={0} duration={500}>Skills</Link>
           </li>
           <li className="nav-item">
-              <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="portfolio" spy={true} smooth={true} offset={50} duration={500}>Portfolio</Link>
+            <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="experience" spy={true} smooth={true} offset={0} duration={500}>Experience</Link>
           </li>
           <li className="nav-item">
-            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
-          </li>
-          <li className="nav-item">
-            <Link onClick={this.handleClick} className="nav-link" activeClass="active" to="experience" spy={true} smooth={true} offset={50} duration={500}>Experience</Link>
-          </li>
-          <li className="nav-item">
-            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="education" spy={true} smooth={true} offset={50} duration={500}>Education</Link>
+            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="education" spy={true} smooth={true} offset={0} duration={500}>Education</Link>
           </li>
          
           <li className="nav-item">
-            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="interests" spy={true} smooth={true} offset={50} duration={500}>Interests</Link>
+            <Link onClick={this.handleClick} className="nav-link"  activeClass="active" to="interests" spy={true} smooth={true} offset={30} duration={500}>Interests</Link>
 
           </li>
         </ul>
