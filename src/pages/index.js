@@ -1,53 +1,11 @@
 import React from 'react'
-import { FaMediumM,  FaGithub, FaHtml5, FaCss3Alt, FaJsSquare, FaCheck, FaReact, FaNodeJs, FaSass, FaLess, FaWordpress, FaNpm } from 'react-icons/fa';
+import { FaMediumM,  FaGithub } from 'react-icons/fa';
 import Skills from '../components/skills'
 import Education from '../components/education'
 import { Element } from 'react-scroll'
 import Layout from '../components/layout'
 import portFolioPDF from '../dist/data-portfolio.pdf'
-
-const portfolio={
-  "data": [
-    {
-      "image": require('../../static/project-react.png').default,
-      "title": "Gatsby Course Website",
-      "description":"Gatsby, ReactJS, Netlify, CSS3, Animation, Stripe",
-      "url": "https://reactcourse.netlify.com"
-    },
-   
-    {
-      "image": require('../../static/project-sunnahway.webp').default,
-      "title": "sunnahway.com.au",
-      "description":"Wordpress, Woocommerce, MailChimp, Hosting, Emails, Product configuration, Shop coupon",
-      "url": "https://sunnahway.com.au"
-    },
-    {
-      "image": require('../../static/project-drik.webp').default,
-      "title": "DRIK.CO",
-      "description":"Wordpress, Divi, MailChimp, Hosting, Emails",
-      "url": "https://drik.co"
-    },
-    
-    {
-      "image": require('../../static/project-coming.webp').default,
-      "title": "Gatsby Coming Soon",
-      "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp",
-      "url": "https://gatsby-comingsoon.netlify.com/"
-    },
-    {
-      "image": require('../../static/project-rbi.webp').default,
-      "title": "Real Estate Blockchain",
-      "description":"Gatsby, ReactJS, Bootstrap4, Netlify, MailChimp, Carousel",
-      "url": "https://rbi-bootstrap.netlify.com"
-    },
-    {
-      "image": require('../../static/project-mjoarder.webp').default,
-      "title": "My Personal Website",
-      "description":"Gatsby, ReactJS, Bootstrap4, Netlify, Carousel, Helmet, Schema",
-      "url": "https://muntasirjoarder.net"
-    }
-  ]
-}
+import expertises from '../dist/img/expertiseswhite.png'
 
 const education={
   "data": [
@@ -210,54 +168,9 @@ const IndexPage = () => (
             <div className="my-auto">
             <h2 className="mb-5">Skills</h2>
 
-            <div className="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul className="list-inline dev-icons">
-              <li className="list-inline-item">
-                <FaHtml5 />
-              </li>
-              <li className="list-inline-item">
-                <FaCss3Alt />
-              </li>
-              <li className="list-inline-item">
-                <FaJsSquare />
-              </li>
-              
-              <li className="list-inline-item">
-                <FaReact />
-              </li>
-              <li className="list-inline-item">
-                <FaNodeJs />
-              </li>
-              <li className="list-inline-item">
-              <FaSass />
-              </li>
-              <li className="list-inline-item">
-                <FaLess />
-              </li>
-              <li className="list-inline-item">
-                <FaWordpress />
-              </li>
-
-              <li className="list-inline-item">
-                <FaNpm />
-              </li>
-            </ul>
-            <div className="subheading mb-3">Workflow</div>
-
-            <ul className="fa-ul mb-0">
-                <li>
-                  <FaCheck />
-                  Mobile-First, Responsive Design</li>
-                <li>
-                <FaCheck />
-                  Cross Browser Testing &amp; Debugging</li>
-                <li>
-                <FaCheck />
-                  Cross Functional Teams</li>
-                <li>
-                <FaCheck />
-                  Agile Development &amp; Scrum</li>
-              </ul>
+         
+            <img src={expertises} className="rounded img-fluid" alt="Microsoft Fabric, Azure Synapse Dedicated SQL, Datalake Gen2, Databricks, dbt, Azure Data Factory, SQLServer, Oracle, REST API, Power BI"></img>
+           
 
 
         </div>
