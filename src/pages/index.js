@@ -75,24 +75,27 @@ const experience = {
   "data": [
     {
       "title": "Senior Data Engineer",
-      "company": "Queensland University of Technology",
+      "company": "Technical University of Australia",
       "description": "Playing key role in evolving our data management strategies in QUT’s cloud data and analytics environment.",
+      "techstack": "Microsoft Fabric, Azure Synapse Dedicated SQL, Datalake Gen2, Databricks, dbt, Azure Data Factory, SQLServer, Oracle, REST API, Power BI",
       "startDate": "2023",
       "endDate": "Present",
       "orderid": 26
     },
     {
       "title": "Data Engineer",
-      "company": "Anglicare Southern Queensland",
+      "company": "Healthcare Service Provider",
       "description": "Planning, architecting, and implementing Modern Data Warehouse in Microsoft Azure Cloud for Anglicare Southern Queensland.",
+      "techstack": "Azure Data Factory, Datalake Gen2, Databricks, Synapse Analytics, Synapse Serverless SQL, SQLServer, Oracle, REST API, Power BI",
       "startDate": "2021",
       "endDate": "2023",
       "orderid": 27
     },
     {
       "title": "IoT Solutions Architect",
-      "company": "Brisbane City Council",
+      "company": "Largest City Council",
       "description": "Building overarching IoT Architecture, IoT Data Modelling, IoT Technology Decision Matrix, IoT Feasibility Analysis.",
+      "techstack": "Azure Data Factory, Datalake Gen2, Azure Logic Apps, REST API, Power BI",
       "startDate": "2019",
       "endDate": "2021",
       "orderid": 28
@@ -100,16 +103,18 @@ const experience = {
     
     {
       "title": "IoT Solutions Developer",
-      "company": "Ipswich City Council",
+      "company": "Local City Council",
       "description": "Working as Technical Expert in Council SmartCity project. Providing technical expertise in data consolidation, analysis and visualisation from IoT sensors and various smart devices transferred over LoraWan and SigFox network.",
+      "techstack": "Azure Data Factory, Datalake Gen2, Azure Logic Apps, Azure Function App, REST API, Power BI",
       "startDate": "2017",
       "endDate": "2019",
       "orderid": 29
     },
     {
       "title": "Web Developer",
-      "company": "Ipswich City Council",
+      "company": "Local City Council",
       "description": "Define, develop, implement and support Web and Self Service solutions for Council's internal and external web/online presence ensuring design and coding standards and procedures are defined, maintained and complied with.",
+      "techstack": "PHP, Squiz CMS, SQL Server, HTML, CSS, JQuery",
       "startDate": "2011",
       "endDate": "2017",
       "orderid": 30
@@ -118,38 +123,43 @@ const experience = {
       "title": "Blockchain Enthusiast",
       "company": "Chainledger",
       "description": "Researching, Planning, solution architecting and developing Blockchain based DAPPs for Ethereum, Hyperledger, Steller Blockchain networks.",
+      "techstack": "Hyperledger Fabric",
       "startDate": "2017",
       "endDate": "2019",
       "orderid": 31
     },
     {
       "title": "Web Developer",
-      "company": "Designate Group",
+      "company": "Media Company",
       "description": "Working collaboratively with the creative team to develop web front end as per design specification.",
+      "techstack": "PHP, HTML, CSS, JQuery",
       "startDate": "2010",
       "endDate": "2011",
       "orderid": 32
     },
     {
       "title": "Technology Specialist",
-      "company": "Grameenphone Ltd",
+      "company": "Mobile Service Provider",
       "description": "Take high level of marketing/business requirements and translate them into cost effective technical and functional design specification and work with solutions all the way through into post GO-LIVE.",
+      "techstack": "SMSC, MMSC, Mobile Data Services",
       "startDate": "2009",
       "endDate": "2010",
       "orderid": 33
     },
     {
       "title": "Sr Systems Analyst",
-      "company": "Robi Axiata Ltd",
+      "company": "Mobile Service Provider",
       "description": "Preparing end to end solution plan for new Value Added Services and applications.",
+      "techstack": "SMSC, MMSC, Mobile Data Services",
       "startDate": "2005",
       "endDate": "2009",
       "orderid": 34
     },
     {
       "title": "Software Engineer",
-      "company": "Dohatec",
+      "company": "US Based Software Company",
       "description": "Developing fullstack web based solutions.",
+      "techstack": "ASP, SQL Server, PHP, HTML, CSS, JQuery",
       "startDate": "2002",
       "endDate": "2003",
       "orderid": 35

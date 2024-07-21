@@ -11,6 +11,7 @@ const Skills = ({items}) => (
                         title={item.title}
                         company={item.company}
                         description={item.description}
+                        techstack = {item.techstack}
                         join={item.startDate}
                         finish={item.endDate}
                     />
