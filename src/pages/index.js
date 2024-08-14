@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaMediumM,  FaGithub } from 'react-icons/fa';
+import { FaMediumM,  FaGithub , FaTwitter} from 'react-icons/fa';
 import Skills from '../components/skills'
 import Education from '../components/education'
 import { Element } from 'react-scroll'
@@ -152,6 +152,10 @@ const IndexPage = () => (
                     
                     <a href="https://medium.com/@muntasirjoarder" target="_blank" rel="noreferrer">
                       <FaMediumM />
+                    </a>
+
+                    <a href="https://x.com/montyjoarder" target="_blank" rel="noreferrer">
+                      <FaTwitter />
                     </a>
                  
                     
